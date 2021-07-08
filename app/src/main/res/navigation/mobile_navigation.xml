@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.admin.kasironline.fragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_tab_layout" />
+
+    <fragment
+        android:id="@+id/navigation_cashbank"
+        android:name="com.admin.kasironline.fragment.CashBankFragment"
+        android:label="@string/title_cash_bank"
+        tools:layout="@layout/fragment_tab_layout" />
+
+    <fragment
+        android:id="@+id/navigation_transaction"
+        android:name="com.admin.kasironline.fragment.TransactionFragment"
+        android:label="@string/title_transaction"
+        tools:layout="@layout/fragment_tab_layout" />
+
+</navigation>
